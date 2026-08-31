@@ -54,7 +54,8 @@ public class AccountRecord {
        Case cs = new Case(
             Origin = 'Phone',
             Reason = 'Installation',
-            Subject = 'Installation Issue' 
+            Subject = 'Installation Issue',
+            AccountId = acc.ID       
         );
         insert cs;
         
