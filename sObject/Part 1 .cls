@@ -26,4 +26,32 @@ public class AccountRecord {
          insert con;
     }
 
+//Method 2 in one method .................................................................................
+    public static void insertAccWithContAndOpp(String name, String rating , String active)
+    {
+        Account acc = new Account();
+        acc.Name = name;
+        acc.Rating = rating;
+        acc.active__c = active;
+        //acc saved in the memory
+        insert acc; //This doc will insert the acc and acc saved in the database
+        
+        Contact con = new Contact(
+            FirstName= 'Buppi',
+            lastName = 'Chakraborty',
+            AccountId = acc.ID //mapped contact to account , AccountId is the lookup field of contact
+        );
+        insert con;
+        
+        Opportunity opp = new Opportunity(
+            Name = 'Opp 101',
+            CloseDate = System.Today(),
+            StageName= 'Prospecting',
+            AccountId = acc.ID
+        );
+        insert opp;
+        
+        
+    }
+
 }
