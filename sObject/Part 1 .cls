@@ -50,6 +50,13 @@ public class AccountRecord {
             AccountId = acc.ID
         );
         insert opp;
+
+       Case cs = new Case(
+            Origin = 'Phone',
+            Reason = 'Installation',
+            Subject = 'Installation Issue' 
+        );
+        insert cs;
         
         
     }
