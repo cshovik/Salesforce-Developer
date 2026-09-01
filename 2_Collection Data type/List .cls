@@ -32,3 +32,22 @@ public class ListClass {
     
 
 }
+
+// Method 2 through return type **************************************************************
+public class ListClass {
+    
+    public static List<string> returndemo(){
+        List<string>colors = new List<string>{'Red','Yellow', 'Green'};
+        //colors.add('Red');    both process we can do
+        //colors.add('Green');
+        //colors.add('Blue');
+        //colors.add('yellow');
+        
+        return colors;
+    }
+    public static void listMethod(){
+        List<string> returnedValues = new List<string>();
+        returnedValues = returndemo();
+        System.debug('ReturnedValued  List Contains ='+returnedValues);
+   }
+}
