@@ -34,6 +34,17 @@ public class ListClass {
         //Equals: IF equals true otherwise False
         System.debug('color List Contains= ' + colors.equals(colors2));
 
+        //get: Show the element of 3rd index like here Blue
+        System.debug('color List Contains= ' + colors.get(3));
+        //indexof - Show The index
+        System.debug('color List Contains= ' + colors.indexof('Blue'));
+        //isEmpty: Check Empty or not True or False
+        System.debug('color List Contains= ' + colors.isEmpty());
+        
+        //Remove:index 3 element removed
+        colors.remove(3);
+        System.debug('color List Contains= ' + colors);
+
     }
     
 
