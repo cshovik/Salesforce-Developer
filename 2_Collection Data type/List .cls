@@ -28,6 +28,12 @@ public class ListClass {
        clonedList = colors.clone();
         system.debug('Cloned List ='+ clonedList);
 
+       //Contains - explain the content available or not- Vailable-True otherwise False
+        System.debug('color List Contains= ' + colors.contains('pink'));
+        
+        //Equals: IF equals true otherwise False
+        System.debug('color List Contains= ' + colors.equals(colors2));
+
     }
     
 
