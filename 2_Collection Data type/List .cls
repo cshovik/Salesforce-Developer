@@ -52,19 +52,23 @@ public class ListClass {
 
 // Method 2 through return type **************************************************************
 public class ListClass {
-    
+
+//public static List<string> returndemo(string str1, string str2)  Method : 3
     public static List<string> returndemo(){
         List<string>colors = new List<string>{'Red','Yellow', 'Green'};
         //colors.add('Red');    both process we can do
         //colors.add('Green');
         //colors.add('Blue');
         //colors.add('yellow');
+        //colors.add(str1);  Method 3
         
         return colors;
     }
     public static void listMethod(){
         List<string> returnedValues = new List<string>();
         returnedValues = returndemo();
+//returnedValues = returndemo('Red','Yellow'); Method :3 Another method to send parametric value
+
         System.debug('ReturnedValued  List Contains ='+returnedValues);
    }
 }
