@@ -72,3 +72,25 @@ public class ListClass {
         System.debug('ReturnedValued  List Contains ='+returnedValues);
    }
 }
+
+
+// For list in sObject ******************************************************
+public static void sObjectListDemo(){
+        List<account> acclist = new List<account>(); // account means a list that store account object account is sObject so we can use that <>
+        account acc = new account(
+            Name = 'Sumon',
+            Active__c = 'Yes'
+            
+        );
+        acclist.add(acc); // it help to not use Dml statement unencessary like insert acc , Which helps in govt limit
+        
+        account acc2 = new account(
+            Name = 'Sohon',
+            Active__c = 'Yes'
+            
+        );
+        acclist.add(acc2);
+        
+        insert acclist;
+        
+    }
